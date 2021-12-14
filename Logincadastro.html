@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="divU, divulgação.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content=" Gabriel Fratelli Cassiano dos Santos, Pedro Henrique dos Santos Lopes, Pierre Aparecido de Souza, Samuel Flávio dos Santos Oliveira, Ramon Gutierrez Nascimento Sitta, Rebeca Leite, Vitória Fernandes Pires e Yuri Prado dos Reis">
+
+    <link rel="shortcut icon" href="Imagens/5b6dda6a-e9cd-4a56-bf04-07a44a452888-removebg-preview.png" type="image/x-icon">
+    <!-- *Ícone logo* -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fonte -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Ícones -->
+    <link rel="stylesheet" href="Style/Stylelogin.css">
+    <!-- Estilo -->
+    <script src="Script/Script.js"></script>
+    <!-- Script -->
+    <title>DivU Log In e Cadastro</title>
+</head>
+
+
+<body>
+    <!-- Login -->
+    <div class="hero">
+        <a href=index.html> <img src="Imagens/ab2b7101-2142-466f-a6a8-9c31e016ba93-removebg-preview.png" class="logo"></a>
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="cadastro()">Registro</button>
+            </div>
+            <div class="social-icons">
+                <img src="Imagens/facebook-logo-24 (1).png">
+                <img src="Imagens/google-logo-24 (1).png">
+                <img src="Imagens/linkedin-logo-24 (1).png">
+            </div>
+            <form id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="Nome de Usuário" required>
+                <input type="password" class="input-field" placeholder="Senha" required>
+                <input type="checkbox" class="chech-box"><span>Lembrar Senha</span>
+                <button type="submit" class="submit-btn">Log In</button>
+            </form>
+
+            <form id="cadastro" class="input-group">
+                <input type="text" class="input-field" placeholder="Nome de Usuário" required>
+                <input type="email" class="input-field" placeholder="Email" required>
+                <input type="password" class="input-field" placeholder="Senha" required>
+                <input type="checkbox" class="chech-box"><span>Li e concordo com os termos e condições de uso</span>
+                <button type="submit" class="submit-btn">Registro</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("cadastro");
+        var z = document.getElementById("btn");
+
+        function cadastro() {
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+
+        function login() {
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+        }
+    </script>
+</body>
+
+</html>
